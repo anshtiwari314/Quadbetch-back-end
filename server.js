@@ -1,10 +1,7 @@
 const express= require('express')
 const app = express()
 const mongoose = require('mongoose');
-const axios = require('axios')
 const cors = require('cors');
-const { urlencoded, json } = require('express');
-const jsonData = require('./data.json');
 const Rates = require('./model/model');
 const dotenv = require('dotenv')
 
