@@ -57,6 +57,6 @@ app.get('/data',async (req,res)=>{
     
 })
 
-app.listen(process.env.PORT || 5000,()=>console.log(`server started at port ${process.env>PORT || 5000}`))
+app.listen(process.env.PORT || 5000,()=>console.log(`server started at port ${process.env.PORT || 5000}`))
 
 
