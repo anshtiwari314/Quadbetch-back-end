@@ -18,7 +18,7 @@ app.set("view engine","ejs")
 
 
 
-const mongoURI = 'mongodb+srv://anuj:anujtiwari@cluster0.6xcfe.mongodb.net/FORJOBS?retryWrites=true&w=majority'
+const mongoURI = 'mongodb+srv://anuj:<password>@cluster0.6xcfe.mongodb.net/FORJOBS?retryWrites=true&w=majority'
 
     mongoose.connect(mongoURI,{
     useNewUrlParser: true,
