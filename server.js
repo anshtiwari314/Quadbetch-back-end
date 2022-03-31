@@ -6,7 +6,9 @@ const cors = require('cors');
 const { urlencoded, json } = require('express');
 const jsonData = require('./data.json');
 const Rates = require('./model/model');
+const dotenv = require('dotenv')
 
+dotenv.config()
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -18,7 +20,7 @@ app.set("view engine","ejs")
 
 
 
-const port =5000;
+
 const mongoURI = 'mongodb+srv://anuj:anujtiwari@cluster0.6xcfe.mongodb.net/FORJOBS?retryWrites=true&w=majority'
 
     mongoose.connect(mongoURI,{
@@ -58,6 +60,6 @@ app.get('/data',async (req,res)=>{
     
 })
 
-app.listen(port,()=>console.log(`server started at port ${port}`))
+app.listen(process.env.PORT || 5000,()=>console.log(`server started at port ${process.env>PORT || 5000}`))
 
 
